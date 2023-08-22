@@ -256,7 +256,7 @@ def get_worksheet_title_for_datestr(date_str):
 	return wksht_title
 
 def all_rows_consecutive(int_list): 
-    return sorted(int_list) == list(range(min(int_list), max(int_list)+1)) 
+	return sorted(int_list) == list(range(min(int_list), max(int_list)+1)) 
 ###
 
 ### UPDATE [ 8/10/2020 ]
