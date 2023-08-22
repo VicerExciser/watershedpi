@@ -874,7 +874,7 @@ if __name__ == "__main__":
 
 				if not DRY_RUN and not (payload is None or len(payload) == 0):
 					### UPDATE [ 8/7/2020 ]
-					if not CHECK_NETWORK_EACH_ITERATION:
+					if CHECK_NETWORK_EACH_ITERATION:
 						if check_connection():
 							print("Network connected --> passing `payload` to SheetManager.append_data() ...")
 							sm.append_data(payload)
